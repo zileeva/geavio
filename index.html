@@ -8,19 +8,68 @@
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vivus/0.3.0/vivus.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <!-- Montserrat|Raleway|Oxygen|Dosis|Muli:400,300|Questrial|Exo|Exo+2:400,500,800,100,300|Ropa+Sans|Kanit:400,500,800|Strait|Lato:400,900,100'  -->
+
+    <script src="public/letters/segment.min.js"></script>
+    <script src="public/letters/d3-ease.v0.6.js"></script>
+    <script src="public/letters/letters.js"></script>
     <script src="public/main.js"></script>
+    
 </head>
 <body>
   <nav class="main-nav"></nav>
+</div>
   <div class="site-main">
     <section class="section-main">
       <div class="section-content">
-        main
+        <h1>jeavio</h1>
+        <svg id="jeavio" width="84px" height="154px" viewBox="0 0 84 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>leaf-svg</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="leaf-svg" transform="translate(-21.000000, 2.000000)" stroke-width="4.09655174" stroke="#446063">
+                  <g id="Group">
+                      <g id="cd-leaf">
+                          
+                          
+                          <path d="M96,0.65700984 L24,149.657012" id="cd-leaf-stem"></path>
+                          <path data-async data-delay="20" d="M64.9210868,1.98107544 C64.9210868,1.98107544 100.714149,41.2196857 100.714149,78.4081819 C100.714149,115.596678 78.7892729,137.630159 78.7892729,137.630159" id="cd-leaf-right" transform="translate(82.817618, 69.805617) rotate(26.000000) translate(-82.817618, -69.805617) "></path>
+                          <path d="M41.9489663,1.3519993 C41.9489663,1.3519993 60.6932931,26.1556306 60.6932931,63.3440724 C60.6932931,100.532514 27.9261956,136.325793 27.9261956,136.325793" id="cd-leaf-left" transform="translate(44.309744, 68.838896) scale(-1, 1) rotate(-26.000000) translate(-44.309744, -68.838896) "></path>
+                          <path data-async data-delay="20" d="M53.9602345,100.136388 L74.1202345,79.9440807" id="cd-leaf-vein-2" transform="translate(64.040235, 90.040235) rotate(26.000000) translate(-64.040235, -90.040235) "></path>
+                          <path d="M69.9602345,68.1363884 L90.1202345,47.9440807" id="cd-leaf-vein-1" transform="translate(80.040235, 58.040235) rotate(26.000000) translate(-80.040235, -58.040235) "></path>
+                          
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+
       </div>
     </section>
     <section class="section-what">
       <div class="section-content">
-        what
+
+
+          <h1 class="foo">what?</h1>
+      </div>
+    </section>
+    <section class="section-why">
+      <div class="section-content">
+          <h1 class="jeavio">why?</h1>
+      </div>
+    </section>
+    <section class="section-how">
+      <div class="section-content">
+          <h1 class="jeavio">how?</h1>
+      </div>
+    </section>
+    <section class="section-contact">
+      <div class="section-content">
+          <h1 class="jeavio">contact</h1>
       </div>
     </section>
   </div>
@@ -32,5 +81,14 @@
     <div class="loader-section section-right"></div>
  
   </div>
+
+  <script>
+  setTimeout(function(){
+    new Vivus('jeavio', { type: 'scenario-sync', duration: 60, animTimingFunction: Vivus.EASE }, function (argument) {
+      // body...
+    });
+  }, 1500);
+  </script>
+
 </body>
 </html>

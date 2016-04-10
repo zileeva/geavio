@@ -2,10 +2,21 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
+  color: #2B2B2B;
+  background: #f3f3f3;
+  font-family: 'Oxygen';
 }
 
 body {
   overflow: auto;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden !important;
 }
 
 .site-main {
@@ -32,9 +43,18 @@ section {
   -ms-transform-origin: left center;
   transform-origin: left center;
 }
-section.section-main {
-  height: calc(100vh + 200px);
+
+section.section-how, section.section-what {
   background: #f3f3f3;
+}
+
+section.section-main, section.section-why, section.section-contact {
+  background: #fff;
+}
+
+section.section-main {
+  height: calc(100vh + 205px);
+  
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   -o-transform: rotate(5deg);
@@ -44,9 +64,9 @@ section.section-main {
   
 }
 
-section.section-what {
-  height: 1000px;
-  background: #fff;
+
+section.section-what, section.section-why, section.section-contact, section.section-how {
+  height: 100vh;
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
@@ -58,21 +78,25 @@ section.section-what {
   margin: 0 auto;
 }
 
-section.section-main .section-content{
+.section-content h1 {
+  font-size: 50px;
+}
+
+section.section-main .section-content  {
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
-  padding: 130px 100px 250px 100px;
+  padding: 250px;
 }
-section.section-what .section-content{
+section.section-what .section-content, section.section-how .section-content, section.section-why .section-content, section.section-contact .section-content{
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   -o-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   transform: rotate(5deg);
-  padding: 150px 100px 250px 100px;
+  padding: 250px;
 }
 
 #loader-wrapper {
